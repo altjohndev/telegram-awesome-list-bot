@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  talbot:
+    image: altjohndev/talbot
+    restart: unless-stopped
+    environment:
+      TALBOT__HTTPS: 'true'
+      TALBOT__CACERTFILE_PATH: /chain.pem
+      TALBOT__CERTFILE_PATH: /cert.pem
+      TALBOT__KEYFILE_PATH: /privkey.pem
+      TALBOT__HOSTNAME: YOUR_HOSTNAME
+      TALBOT__ORIGIN_HOSTNAMES: '//YOUR_HOSTNAME'
+      TALBOT__SECRET_KEY_BASE: GENERATE_ONE_WITH_MIX_PHX_GEN_SECRET
+      TALBOT__TELEGRAM_BOT_TOKEN: GET_ONE_WITH_TELEGRAM_BOT_FATHER
+    volumes:
+      - /etc/letsencrypt/live/YOUR_HOSTNAME/cert.pem:/cert.pem
+      - /etc/letsencrypt/live/YOUR_HOSTNAME/privkey.pem:/privkey.pem
+      - /etc/letsencrypt/live/YOUR_HOSTNAME/chain.pem:/chain.pem
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:12.3
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: talbot
+      POSTGRES_PASSWORD: talbot
+      POSTGRES_DB: talbot
+    volumes:
+      - ./data:/var/lib/postgresql/data

@@ -1,0 +1,173 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: en_US\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:207
+msgid "Category %{category} removed"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.ex:55
+msgid "Category created successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:308
+msgid "Category not found"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.ex:42
+msgid "Category updated successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:4
+msgid "Chat listings"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/form_component.ex:42
+msgid "Chat updated successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:338
+msgid "Failed to remove category"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:350
+msgid "Failed to remove item"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:344
+msgid "Failed to remove sub-category"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:235
+msgid "Item %{item} removed"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:156
+#: lib/talbot_web/live/chat_live/show.ex:180
+msgid "Item %{item} selected!"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/item_live/form_component.ex:55
+msgid "Item created successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:320
+msgid "Item not found"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/item_live/form_component.ex:42
+msgid "Item updated successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:100
+msgid "New category"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:74
+msgid "New item from %{category}"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:120
+msgid "New sub-category from %{category}"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:221
+msgid "Sub-category %{sub_category} removed"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/sub_category_live/form_component.ex:55
+msgid "Sub-category created successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:314
+msgid "Sub-category not found"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/sub_category_live/form_component.ex:42
+msgid "Sub-category updated successfully"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:326
+msgid "There are no items available to be selected"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:107
+msgid "Update category"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:50
+msgid "Update chat"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:87
+msgid "Update item from %{category}"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:132
+msgid "Update sub-category from %{category}"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:288
+msgid "Your link expired. Please request a new link to the bot with <code>/web</code> command"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:63
+msgid "You do not have any category. Click on the button <code>+</code> above to create one."
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:96
+msgid "You do not have any item. Click on the button <code>+</code> above to create one."
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:173
+msgid "You do not have any sub-category. Click on the button <code>+</code> above to create one."
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:332
+msgid "Failed to archive item"
+msgstr ""
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.ex:356
+msgid "Failed to select item"
+msgstr ""

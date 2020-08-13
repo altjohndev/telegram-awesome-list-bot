@@ -1,0 +1,104 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.html.leex:15
+#: lib/talbot_web/live/item_live/form_component.html.leex:28 lib/talbot_web/live/sub_category_live/form_component.html.leex:16
+msgid "Abbreviation"
+msgstr "Abreviação"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:106
+#: lib/talbot_web/live/item_live/form_component.html.leex:16
+msgid "Archived?"
+msgstr "Arquivado?"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:81
+#: lib/talbot_web/live/chat_live/show.html.leex:149 lib/talbot_web/live/chat_live/show.html.leex:199
+msgid "Are you sure?"
+msgstr "Você tem certeza?"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:55
+msgid "Categories"
+msgstr "Categorias"
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.html.leex:19
+#: lib/talbot_web/live/item_live/form_component.html.leex:32 lib/talbot_web/live/sub_category_live/form_component.html.leex:20
+msgid "Description"
+msgstr "Descrição"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:88
+msgid "Items"
+msgstr "Itens"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/form_component.html.leex:9
+msgid "Localization"
+msgstr "Localização"
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.html.leex:11
+#: lib/talbot_web/live/chat_live/show.html.leex:103 lib/talbot_web/live/chat_live/show.html.leex:181
+#: lib/talbot_web/live/item_live/form_component.html.leex:24 lib/talbot_web/live/sub_category_live/form_component.html.leex:12
+msgid "Name"
+msgstr "Nome"
+
+#, elixir-format
+#: lib/talbot_client/commands/show.ex:219
+msgid "No"
+msgstr "Não"
+
+#, elixir-format
+#: lib/talbot_web/live/item_live/form_component.html.leex:36
+msgid "Reference"
+msgstr "Referência"
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.html.leex:23
+#: lib/talbot_web/live/chat_live/form_component.html.leex:15 lib/talbot_web/live/item_live/form_component.html.leex:40
+#: lib/talbot_web/live/sub_category_live/form_component.html.leex:24
+msgid "Save"
+msgstr "Salvar"
+
+#, elixir-format
+#: lib/talbot_web/live/category_live/form_component.html.leex:23
+#: lib/talbot_web/live/chat_live/form_component.html.leex:15 lib/talbot_web/live/item_live/form_component.html.leex:40
+#: lib/talbot_web/live/sub_category_live/form_component.html.leex:24
+msgid "Saving..."
+msgstr "Salvando..."
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:105
+#: lib/talbot_web/live/item_live/form_component.html.leex:12
+msgid "Selected?"
+msgstr "Selecionado?"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:163
+msgid "Sub-categories"
+msgstr "Sub-categorias"
+
+#, elixir-format
+#: lib/talbot_web/live/chat_live/show.html.leex:104
+#: lib/talbot_web/live/item_live/form_component.html.leex:20
+msgid "Sub-category"
+msgstr "Sub-categoria"
+
+#, elixir-format
+#: lib/talbot_client/commands/show.ex:217
+msgid "Yes"
+msgstr "Sim"

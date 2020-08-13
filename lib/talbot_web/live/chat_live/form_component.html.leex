@@ -1,0 +1,16 @@
+<h2><%= @title %></h2>
+
+<%= f = form_for @changeset, "#",
+  id: "chat-form",
+  phx_target: @myself,
+  phx_change: "validate",
+  phx_submit: "save" %>
+
+<%= label f, :locale, gettext("Localization") %>
+<%= select f, :locale, @locales %>
+<%= error_tag f, :locale %>
+
+<br>
+
+<%= submit gettext("Save"), phx_disable_with: gettext("Saving...") %>
+</form>

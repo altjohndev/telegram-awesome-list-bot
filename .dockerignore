@@ -1,0 +1,9 @@
+_build
+.devcontainer
+.elixir_ls
+.git
+.misc
+deps
+.credo.exs
+.formatter.exs
+.gitignore

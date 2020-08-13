@@ -1,0 +1,41 @@
+<h2><%= @title %></h2>
+
+<%= f = form_for @changeset, "#",
+  id: "item-form",
+  phx_target: @myself,
+  phx_change: "validate",
+  phx_submit: "save" %>
+
+<%= text_input f, :chat_id, value: @chat_id, hidden: true %>
+<%= text_input f, :category_id, value: @category_id, hidden: true %>
+
+<%= label f, :selected, gettext("Selected?") %>
+<%= checkbox f, :selected %>
+<%= error_tag f, :selected %>
+
+<%= label f, :archived, gettext("Archived?") %>
+<%= checkbox f, :archived %>
+<%= error_tag f, :archived %>
+
+<%= label f, :sub_category_id, gettext("Sub-category") %>
+<%= select f, :sub_category_id, Enum.map([%{name: "", id: nil}] ++ @sub_categories, &{&1.name, &1.id}) %>
+<%= error_tag f, :sub_category_id %>
+
+<%= label f, :name, gettext("Name") %>
+<%= text_input f, :name %>
+<%= error_tag f, :name %>
+
+<%= label f, :abbr, gettext("Abbreviation") %>
+<%= text_input f, :abbr %>
+<%= error_tag f, :abbr %>
+
+<%= label f, :description, gettext("Description") %>
+<%= text_input f, :description %>
+<%= error_tag f, :description %>
+
+<%= label f, :reference, gettext("Reference") %>
+<%= text_input f, :reference %>
+<%= error_tag f, :reference %>
+
+<%= submit gettext("Save"), phx_disable_with: gettext("Saving...") %>
+</form>

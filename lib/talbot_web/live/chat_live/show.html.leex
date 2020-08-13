@@ -1,0 +1,211 @@
+<h1>
+  <i class="icono-comment"></i>
+  <%= live_patch to: Routes.chat_show_path(@socket, :edit_chat, @chat_id, @passcode) do %>
+  <%= dgettext "web", "Chat listings" %>
+  <% end %>
+</h1>
+
+<%= if @live_action == :edit_chat do %>
+<%= live_modal @socket, TalbotWeb.ChatLive.FormComponent,
+    id: @chat.id,
+    title: @page_title,
+    action: @live_action,
+    chat: @chat,
+    locales: @locales,
+    return_to: Routes.chat_show_path(@socket, :show, @chat.id, @passcode) %>
+<% end %>
+
+<%= if @live_action in [:new_category, :edit_category] do %>
+<%= live_modal @socket, TalbotWeb.CategoryLive.FormComponent,
+    id: @category.id || :new_category,
+    title: @page_title,
+    action: @live_action,
+    category: @category,
+    chat_id: @chat_id,
+    return_to: Routes.chat_show_path(@socket, :show, @chat_id, @passcode) %>
+<% end %>
+
+<%= if @live_action in [:new_item, :edit_item] do %>
+<%= live_modal @socket, TalbotWeb.ItemLive.FormComponent,
+    id: @item.id || "#{@category_id}_new_item",
+    title: @page_title,
+    action: @live_action,
+    item: @item,
+    category_id: @category_id,
+    sub_categories: @sub_categories,
+    chat_id: @chat_id,
+    return_to: Routes.chat_show_path(@socket, :show, @chat_id, @passcode) %>
+<% end %>
+
+<%= if @live_action in [:new_sub_category, :edit_sub_category] do %>
+<%= live_modal @socket, TalbotWeb.SubCategoryLive.FormComponent,
+    id: @sub_category.id || "#{@category_id}_new_sub_category",
+    title: @page_title,
+    action: @live_action,
+    sub_category: @sub_category,
+    category_id: @category_id,
+    chat_id: @chat_id,
+    return_to: Routes.chat_show_path(@socket, :show, @chat_id, @passcode) %>
+<% end %>
+
+<% empty_categories = Enum.empty?(@categories) %>
+
+<h2>
+  <i class="icono-bookmark"></i>
+  <%= gettext "Categories" %>
+  <%= live_patch to: Routes.chat_show_path(@socket, :new_category, @chat_id, @passcode) do %>
+  <i class="icono-plus green"></i>
+  <% end %>
+</h2>
+
+<%= if empty_categories do %>
+
+<p><%= raw(dgettext "web", "You do not have any category. Click on the button <code>+</code> above to create one.") %>
+</p>
+
+<% else %>
+
+<%= for category <- @categories do %>
+
+<h2>
+  #
+
+  <%= live_patch to: Routes.chat_show_path(@socket, :edit_category, @chat_id, @passcode, category) do %>
+  <%= category.name %>
+  <% end %>
+
+  <%= live_patch to: Routes.chat_show_path(@socket, :select_from_category, @chat_id, @passcode, category) do %>
+  <i class="icono-sync"></i>
+  <% end %>
+
+  <%= link to: "#", phx_click: "delete_category", phx_value_id: category.id, data: [confirm: gettext("Are you sure?")] do %>
+  <i class="icono-trash red"></i>
+  <% end %>
+</h2>
+
+<h3>
+  <i class="icono-tag"></i>
+  <%= gettext "Items" %>
+  <%= live_patch to: Routes.chat_show_path(@socket, :new_item, @chat_id, @passcode, category) do %>
+  <i class="icono-plus green"></i>
+  <% end %>
+</h3>
+
+<%= if Enum.empty?(category.items) do %>
+
+<p><%= raw(dgettext "web", "You do not have any item. Click on the button <code>+</code> above to create one.") %></p>
+
+<% else %>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= gettext "Name" %></th>
+      <th><%= gettext "Sub-category" %></th>
+      <th><%= gettext "Selected?" %></th>
+      <th><%= gettext "Archived?" %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for item <- Enum.sort(category.items, &(&1.name <= &2.name)) do %>
+
+    <tr>
+      <td>
+        <%= live_patch to: Routes.chat_show_path(@socket, :edit_item, @chat_id, @passcode, category, item) do %>
+        <%= item.name %>
+        <% end %>
+      </td>
+
+      <td>
+        <%= if item.sub_category do %>
+        <%= item.sub_category.name %>
+        <% else %>
+        N/A
+        <% end %>
+      </td>
+
+      <td>
+        <%= link to: "#", phx_click: "toggle_select", phx_value_id: item.id do %>
+        <%= if item.selected do %>
+        <i class="icono-check green"></i>
+        <% else %>
+        <i class="icono-cross red"></i>
+        <% end %>
+        <% end %>
+      </td>
+
+      <td>
+        <%= link to: "#", phx_click: "toggle_archive", phx_value_id: item.id do %>
+        <%= if item.archived do %>
+        <i class="icono-check green"></i>
+        <% else %>
+        <i class="icono-cross red"></i>
+        <% end %>
+        <% end %>
+      </td>
+
+      <td>
+        <%= link to: "#", phx_click: "delete_item", phx_value_id: item.id, data: [confirm: gettext("Are you sure?")] do %>
+        <i class="icono-trash red"></i>
+        <% end %>
+      </td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<% end %>
+
+<h3>
+  <i class="icono-bookmarkEmpty"></i>
+  <%= gettext "Sub-categories" %>
+  <%= link to: Routes.chat_show_path(@socket, :new_sub_category, @chat_id, @passcode, category) do %>
+  <i class="icono-plus green"></i>
+  <% end %>
+</h3>
+
+
+<%= if Enum.empty?(category.sub_categories) do %>
+
+<p>
+  <%= raw(dgettext "web", "You do not have any sub-category. Click on the button <code>+</code> above to create one.") %>
+</p>
+
+<% else %>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= gettext "Name" %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for sub_category <- Enum.sort(category.sub_categories, &(&1.name <= &2.name)) do %>
+
+    <tr>
+      <td>
+        <%= live_patch to: Routes.chat_show_path(@socket, :edit_sub_category, @chat_id, @passcode, category, sub_category) do %>
+        <%= sub_category.name %>
+        <% end %>
+      </td>
+
+      <td>
+        <%= live_patch to: Routes.chat_show_path(@socket, :select_from_sub_category, @chat_id, @passcode, category, sub_category) do %>
+        <i class="icono-sync"></i>
+        <% end %>
+        <%= link to: "#", phx_click: "delete_sub_category", phx_value_id: sub_category.id, data: [confirm: gettext("Are you sure?")] do %>
+        <i class="icono-trash red"></i>
+        <% end %>
+      </td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<% end %>
+<% end %>
+<% end %>

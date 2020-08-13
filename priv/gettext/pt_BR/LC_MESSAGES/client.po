@@ -1,0 +1,268 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:65
+msgid "<code>%{count}</code> item was archived from the category <b>%{name}</b>."
+msgid_plural "<code>%{count}</code> items were archived from the category <b>%{name}</b>."
+msgstr[0] "<code>%{count}</code> item foi arquivado da categoria <b>%{name}</b>."
+msgstr[1] "<code>%{count}</code> itens foram arquivados da categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:111
+msgid "<code>%{count}</code> item was archived from the sub-category <b>%{name}</b> (%{category_name})."
+msgid_plural "<code>%{count}</code> items were archived from the sub-category <b>%{name}</b> (%{category_name})."
+msgstr[0] "<code>%{count}</code> item foi arquivado da sub-categoria <b>%{name}</b> (%{category_name})."
+msgstr[1] "<code>%{count}</code> itens foram arquivados da sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:74
+msgid "<code>%{count}</code> item was dearchived from the category <b>%{name}</b>."
+msgid_plural "<code>%{count}</code> item were dearchived from the category <b>%{name}</b>."
+msgstr[0] "<code>%{count}</code> item foi desarquivado da categoria <b>%{name}</b>."
+msgstr[1] "<code>%{count}</code> itens foram desarquivados da categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:121
+msgid "<code>%{count}</code> item was dearchived from the sub-category <b>%{name}</b> (%{category_name})."
+msgid_plural "<code>%{count}</code> item were dearchived from the sub-category <b>%{name}</b> (%{category_name})."
+msgstr[0] "<code>%{count}</code> item foi desarquivado da sub-categoria <b>%{name}</b> (%{category_name})."
+msgstr[1] "<code>%{count}</code> itens foram desarquivados da sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:76
+msgid "<code>%{count}</code> item was deselected from the category <b>%{name}</b>."
+msgid_plural "<code>%{count}</code> item were deselected from the category <b>%{name}</b>."
+msgstr[0] "<code>%{count}</code> item foi desselecionado da categoria <b>%{name}</b>."
+msgstr[1] "<code>%{count}</code> itens foram desselecionados da categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:125
+msgid "<code>%{count}</code> item was deselected from the sub-category <b>%{name}</b> (%{category_name})."
+msgid_plural "<code>%{count}</code> item were deselected from the sub-category <b>%{name}</b> (%{category_name})."
+msgstr[0] "<code>%{count}</code> item foi desselecionado da sub-categoria <b>%{name}</b> (%{category_name})."
+msgstr[1] "<code>%{count}</code> itens foram desselecionados da sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:67
+msgid "<code>%{count}</code> item was selected from the category <b>%{name}</b>."
+msgid_plural "<code>%{count}</code> items were selected from the category <b>%{name}</b>."
+msgstr[0] "<code>%{count}</code> item foi selecionado da categoria <b>%{name}</b>."
+msgstr[1] "<code>%{count}</code> itens foram selecionados da categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:115
+msgid "<code>%{count}</code> item was selected from the sub-category <b>%{name}</b> (%{category_name})."
+msgid_plural "<code>%{count}</code> items were selected from the sub-category <b>%{name}</b> (%{category_name})."
+msgstr[0] "<code>%{count}</code> item foi selecionado da sub-categoria <b>%{name}</b> (%{category_name})."
+msgstr[1] "<code>%{count}</code> itens foram selecionados da sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/pipeline.ex:130
+msgid "Hi, %{name}."
+msgstr "Olá, %{name}."
+
+#, elixir-format
+#: lib/talbot_client/commands/show.ex:46
+msgid "I found your category!\n\n<b>%{name}</b>\n%{description}\n- Abbreviation: <code>%{abbr}</code>\n\n- Sub-categories: %{sub_categories_count}\n\n- Items: %{items_count}\n\n- Active items: %{active_items_count}\n\n- Active selected items: %{active_selected_items_count}\n\n- Archived items: %{archived_items_count}\n"
+msgstr "Eu encontrei sua categoria!\n\n<b>%{name}</b>\n%{description}\n- Abreviação: <code>%{abbr}</code>\n\n- Sub-categorias: %{sub_categories_count}\n\n- Itens: %{items_count}\n\n- Itens ativos: %{active_items_count}\n\n- Itens ativos e selecionados: %{active_selected_items_count}\n\n- Itens arquivados: %{archived_items_count}\n"
+
+#, elixir-format
+#: lib/talbot_client/commands/show.ex:152
+msgid "I found your item!\n\n<b>%{name}</b>\n%{reference}%{description}\n- Abbreviation: <code>%{abbr}</code>\n\n- Category: %{category_name}\n\n- Category abbreviation: <code>%{category_abbr}</code>\n\n- Selected: %{selected}\n\n- Archived: %{archived}\n"
+msgstr "Eu encontrei seu item!\n\n<b>%{name}</b>\n%{reference}%{description}\n- Abreviação: <code>%{abbr}</code>\n\n- Categoria: %{category_name}\n\n- Abreviação da categoria: <code>%{category_abbr}</code>\n\n- Selecionado: %{selected}\n\n- Arquivado: %{archived}\n"
+
+#, elixir-format
+#: lib/talbot_client/commands/show.ex:181
+msgid "I found your item!\n\n<b>%{name}</b>\n%{reference}%{description}\n- Abbreviation: <code>%{abbr}</code>\n\n- Category: %{category_name}\n\n- Category abbreviation: <code>%{category_abbr}</code>\n\n- Sub-category: %{sub_category_name}\n\n- Sub-category abbreviation: <code>%{sub_category_abbr}</code>\n\n- Selected: %{selected}\n\n- Archived: %{archived}\n"
+msgstr "Eu encontrei seu item!\n\n<b>%{name}</b>\n%{reference}%{description}\n- Abreviação: <code>%{abbr}</code>\n\n- Categoria: %{category_name}\n\n- Abreviação da categoria: <code>%{category_abbr}</code>\n\n- Sub-categoria: %{sub_category_name}\n\n- Abreviação da sub-categoria: <code>%{sub_category_abbr}</code>\n\n- Selecionado: %{selected}\n\n- Arquivado: %{archived}\n"
+
+#, elixir-format
+#: lib/talbot_client/commands/show.ex:105
+msgid "I found your sub-category!\n\n<b>%{name}</b>\n%{description}\n- Abbreviation: <code>%{abbr}</code>\n\n- Category: %{category_name}\n\n- Category abbreviation: <code>%{category_abbr}</code>\n\n- Items: %{items_count}\n\n- Active items: %{active_items_count}\n\n- Active selected items: %{active_selected_items_count}\n\n- Archived items: %{archived_items_count}\n"
+msgstr "Eu encontrei sua sub-categoria!\n\n<b>%{name}</b>\n%{description}\n- Abreviação: <code>%{abbr}</code>\n\n- Categoria: %{category_name}\n\n- Abreviação da categoria: <code>%{category_abbr}</code>\n\n- Itens: %{items_count}\n\n- Itens ativos: %{active_items_count}\n\n- Itens ativos e selecionados: %{active_selected_items_count}\n\n- Itens arquivados: %{archived_items_count}\n"
+
+#, elixir-format
+#: lib/talbot_client/commands/select_random.ex:57
+msgid "I randomly selected the item <b>%{name}</b> from the category <b>%{category_name}</b>."
+msgstr "Eu aleatoriamente selecionei o item <b>%{name}</b> da categoria <b>%{category_name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/select_random.ex:74
+msgid "I randomly selected the item <b>%{name}</b> from the sub-category <b>%{category_name}</b> (%{sub_category_name})."
+msgstr "Eu aleatoriamente selecionei o item <b>%{name}</b> da sub-categoria <b>%{category_name}</b> (%{sub_category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/new.ex:122
+msgid "I succesfully created the <b>%{name}</b> (%{category_name}) item!"
+msgstr "Eu criei o item <b>%{name}</b> (%{category_name})!"
+
+#, elixir-format
+#: lib/talbot_client/commands/new.ex:72
+msgid "I succesfully created the <b>%{name}</b> (%{category_name}) sub-category!"
+msgstr "Eu criei a sub-categoria <b>%{name}</b> (%{category_name})!"
+
+#, elixir-format
+#: lib/talbot_client/commands/new.ex:112
+msgid "I succesfully created the <b>%{name}</b> (%{sub_category_name} - %{category_name}) item!"
+msgstr "Eu criei o item <b>%{name}</b> (%{sub_category_name} - %{category_name})!"
+
+#, elixir-format
+#: lib/talbot_client/commands/new.ex:54
+msgid "I succesfully created the <b>%{name}</b> category!"
+msgstr "Eu criei a categoria <b>%{name}</b>!"
+
+#, elixir-format
+#: lib/talbot_client/commands/edit.ex:142
+msgid "I succesfully updated the <b>%{name}</b> (%{category_name}) item field <b>%{field}</b> to <b>%{value}</b>!"
+msgstr "Eu atualizei o campo <b>%{field}</b> do item <b>%{name}</b> (%{category_name}) para <b>%{value}</b>!"
+
+#, elixir-format
+#: lib/talbot_client/commands/edit.ex:84
+msgid "I succesfully updated the <b>%{name}</b> (%{category_name}) sub-category field <b>%{field}</b> to <b>%{value}</b>!"
+msgstr "Eu atualizei o campo <b>%{field}</b> da sub-categoria <b>%{name}</b> (%{category_name}) para <b>%{value}</b>!"
+
+#, elixir-format
+#: lib/talbot_client/commands/edit.ex:130
+msgid "I succesfully updated the <b>%{name}</b> (%{sub_category_name} - %{category_name}) item field <b>%{field}</b> to <b>%{value}</b>!"
+msgstr "Eu atualizei o campo <b>%{field}</b> do item <b>%{name}</b> (%{sub_category_name} - %{category_name}) para <b>%{value}</b>!"
+
+#, elixir-format
+#: lib/talbot_client/commands/edit.ex:59
+msgid "I succesfully updated the <b>%{name}</b> category field <b>%{field}</b> to <b>%{value}</b>!"
+msgstr "Eu atualizei o campo <b>%{field}</b> da categoria <b>%{name}</b> para <b>%{value}</b>!"
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:157
+msgid "I successfully archived the item <b>%{name}</b> (%{category_name})."
+msgstr "Eu arquivei o item <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:175
+msgid "I successfully archived the item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+msgstr "Eu arquivei o item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:166
+msgid "I successfully dearchived the item <b>%{name}</b> (%{category_name})."
+msgstr "Eu desarquivei o item <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:185
+msgid "I successfully dearchived the item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+msgstr "Eu desarquivei o item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:170
+msgid "I successfully deselected the item <b>%{name}</b> (%{category_name})."
+msgstr "Eu selecionei o item <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:189
+msgid "I successfully deselected the item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+msgstr "Eu desselecionei o item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/delete.ex:55
+msgid "I successfully removed the category <b>%{name}</b>."
+msgstr "Eu removi a categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/delete.ex:107
+msgid "I successfully removed the item <b>%{name}</b> (%{category_name})."
+msgstr "Eu removi o item <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/delete.ex:116
+msgid "I successfully removed the item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+msgstr "Eu removi o item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/delete.ex:74
+msgid "I successfully removed the sub-category <b>%{name}</b> (%{category_name})."
+msgstr "Eu removi a sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:161
+msgid "I successfully selected the item <b>%{name}</b> (%{category_name})."
+msgstr "Eu selecionei o item <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:179
+msgid "I successfully selected the item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+msgstr "Eu selecionei o item <b>%{name}</b> (%{sub_category_name} - %{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:84 lib/talbot_client/commands/list.ex:93
+msgid "The <b>%{category_name}</b> items are:"
+msgstr "Os itens de <b>%{category_name}</b> são:"
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:79 lib/talbot_client/commands/list.ex:89
+msgid "The <b>%{category_name}</b> sub-categories are:"
+msgstr "As sub-categorias de <b>%{category_name}</b> são:"
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:140
+msgid "The <b>%{sub_category_name}</b> (%{category_name}) items are:"
+msgstr "Os items de <b>%{sub_category_name}</b> (%{category_name}) são:"
+
+#, elixir-format
+#: lib/talbot_client/commands/web.ex:27
+msgid "The link below will expire in 1 hour:\n\n<a href=\"%{link}\">%{link}</a>\n"
+msgstr "O link abaixo expira em 1 hora:\n\n<a href=\"%{link}\">%{link}</a>\n"
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:58
+msgid "There is nothing to archive or dearchive from the category <b>%{name}</b>."
+msgstr "Não há nada para arquivar ou desarquivar da categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/archive.ex:103
+msgid "There is nothing to archive or dearchive from the sub-category <b>%{name}</b> (%{category_name})."
+msgstr "Não há nada para arquivar ou desarquivar da sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:60
+msgid "There is nothing to select or deselect from the category <b>%{name}</b>."
+msgstr "Não hánada para selecionar ou desselecionar da categoria <b>%{name}</b>."
+
+#, elixir-format
+#: lib/talbot_client/commands/select.ex:107
+msgid "There is nothing to select or deselect from the sub-category <b>%{name}</b> (%{category_name})."
+msgstr "Não há nada para selecionar ou desselecionar da sub-categoria <b>%{name}</b> (%{category_name})."
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:75
+msgid "This category does not have any sub-category or item."
+msgstr "Esta categoria não possui nenhuma sub-categoria ou item."
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:44
+msgid "This chat does not have any category."
+msgstr "Este chat não possui nenhuma categoria."
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:136
+msgid "This sub-category does not have any item."
+msgstr "Esta sub-categoria não possui nenhum item."
+
+#, elixir-format
+#: lib/talbot_client/commands/list.ex:48
+msgid "Your categories are:"
+msgstr "Suas categorias são:"
+
+#, elixir-format
+#: lib/talbot_client/commands/locale.ex:35
+msgid "私はロボット...! Just kidding! I successfully updated the language."
+msgstr "私はロボット...! Brincadeirinha! Eu atualizei o idioma."

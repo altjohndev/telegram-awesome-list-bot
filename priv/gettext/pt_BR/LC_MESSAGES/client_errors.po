@@ -1,0 +1,142 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/talbot_client/error_helpers.ex:27
+msgid "- <code>%{field}</code> errors:"
+msgstr "- Erros de <code>%{field}</code>:"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:211
+msgid "I am already speaking this language."
+msgstr "Eu já estou falando neste idioma."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:233
+msgid "Oops... I had some problems with your request."
+msgstr "Vixe... Tive problemas com sua solicitação."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:17
+msgid "Sorry, I can not archive this item."
+msgstr "Perdão, eu não posso arquivar este item."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:21
+msgid "Sorry, I can not create this category."
+msgstr "Perdão, eu não posso criar esta categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:29
+msgid "Sorry, I can not create this item."
+msgstr "Perdão, eu não posso criar este item."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:25
+msgid "Sorry, I can not create this sub-category."
+msgstr "Perdão, eu não posso criar esta sub-categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:33
+msgid "Sorry, I can not delete this category."
+msgstr "Perdão, eu não posso remover esta categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:41
+msgid "Sorry, I can not delete this item."
+msgstr "Perdão, eu não posso remover este item."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:37
+msgid "Sorry, I can not delete this sub-category."
+msgstr "Perdão, eu não posso remover esta sub-categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:45
+msgid "Sorry, I can not select this item."
+msgstr "Perdão, eu não posso selecionar este item."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:49
+msgid "Sorry, I can not update this category."
+msgstr "Perdão, eu não posso atualizar esta categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:57
+msgid "Sorry, I can not update this item."
+msgstr "Perdão, eu não posso atualizar este item."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:53
+msgid "Sorry, I can not update this sub-category."
+msgstr "Perdão, eu não posso atualizar esta sub-categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:13
+msgid "Sorry, I did not found your category."
+msgstr "Perdão, eu não encontrei sua categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:207
+msgid "Sorry, I did not found your item."
+msgstr "Perdão, eu não encontrei seu item."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:215
+msgid "Sorry, I did not found your sub-category."
+msgstr "Perdão, eu não encontrei sua sub-categoria."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:219
+msgid "Sorry, I do not recognize this command."
+msgstr "Perdão, eu não reconheço este comando."
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:61
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/ar {category_abbr}</code>\n\n<code>/ar {category_abbr} {sub_category_abbr}</code>\n\n<code>/ar {category_abbr} . {item_abbr}</code>\n\n<code>/ar {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/ar {category_abbr}</code>\n\n<code>/ar {category_abbr} {sub_category_abbr}</code>\n\n<code>/ar {category_abbr} . {item_abbr}</code>\n\n<code>/ar {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:80
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/d {category_abbr}</code>\n\n<code>/d {category_abbr} {sub_category_abbr}</code>\n\n<code>/d {category_abbr} . {item_abbr}</code>\n\n<code>/d {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/d {category_abbr}</code>\n\n<code>/d {category_abbr} {sub_category_abbr}</code>\n\n<code>/d {category_abbr} . {item_abbr}</code>\n\n<code>/d {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:99
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/e {category_abbr} {field} {value}</code>\n\n<code>/e {category_abbr} {sub_category_abbr} {field} {value}</code>\n\n<code>/e {category_abbr} . {item_abbr} {field} {value}</code>\n\n<code>/e {category_abbr} {sub_category_abbr} {item_abbr} {field} {value}</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/e {category_abbr} {field} {value}</code>\n\n<code>/e {category_abbr} {sub_category_abbr} {field} {value}</code>\n\n<code>/e {category_abbr} . {item_abbr} {field} {value}</code>\n\n<code>/e {category_abbr} {sub_category_abbr} {item_abbr} {field} {value}</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:118
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/locale en_US</code>\n\n<code>/locale pt_BR</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/locale en_US</code>\n\n<code>/locale pt_BR</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:133
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/n {category_abbr}</code>\n\n<code>/n {category_abbr} {sub_category_abbr}</code>\n\n<code>/n {category_abbr} . {item_abbr}</code>\n\n<code>/n {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/n {category_abbr}</code>\n\n<code>/n {category_abbr} {sub_category_abbr}</code>\n\n<code>/n {category_abbr} . {item_abbr}</code>\n\n<code>/n {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:188
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/s {category_abbr}</code>\n\n<code>/s {category_abbr} {sub_category_abbr}</code>\n\n<code>/s {category_abbr} . {item_abbr}</code>\n\n<code>/s {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/s {category_abbr}</code>\n\n<code>/s {category_abbr} {sub_category_abbr}</code>\n\n<code>/s {category_abbr} . {item_abbr}</code>\n\n<code>/s {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:169
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/se {category_abbr}</code>\n\n<code>/se {category_abbr} {sub_category_abbr}</code>\n\n<code>/se {category_abbr} . {item_abbr}</code>\n\n<code>/se {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/se {category_abbr}</code>\n\n<code>/se {category_abbr} {sub_category_abbr}</code>\n\n<code>/se {category_abbr} . {item_abbr}</code>\n\n<code>/se {category_abbr} {sub_category_abbr} {item_abbr}</code>\n"
+
+#, elixir-format
+#: lib/talbot_client/error_messages.ex:152
+msgid "Sorry, your input is invalid.\n\nUsage:\n\n<code>/sr {category_abbr}</code>\n\n<code>/sr {category_abbr} {sub_category_abbr}</code>\n\n<code>/sr {category_abbr} .</code>\n"
+msgstr "Perdão, sua entrada é inválida.\n\nUsage:\n\n<code>/sr {category_abbr}</code>\n\n<code>/sr {category_abbr} {sub_category_abbr}</code>\n\n<code>/sr {category_abbr} .</code>\n"
